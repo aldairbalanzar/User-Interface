@@ -1,66 +1,128 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing:border-box;
+	padding:0;
+	margin:0;
+	max-width:100%;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+.container {
+	width: 86%;
+	margin: 0 auto;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+nav {
+	margin: 0 0 8%;
+	position: fixed;
+	background-color: rgba(224, 224, 224, 0.9);
+	width: 90%;
 }
 
-/* Your code starts here! */
+nav a {
+	padding: 2% 2.5% 0;
+	color: grey;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: rgb(85, 85, 85);
+	background-color: rgb(255, 255, 255);
+	transition: .5s;
+}
+
+.logo-img {
+	background-image: url("../img/logo.png");
+	background-repeat: no-repeat;
+	width: 32%;
+	height: 36px;
+	display: inline-block;
+	margin-left: 4%;
+}
+
+h1, h3 {
+	font-family: 'Bangers', cursive;
+}
+
+p, a, button {
+	font-family: 'Gayathri', sans-serif;
+}
+
+h3 {
+	margin-bottom: 6%; 
+}
+
+.header-slogan {
+	width: 40%;
+	text-align: center;
+	display: inline-block;
+	margin: 0 6%;
+}
+
+.header-slogan h1 {
+	font-size: 72px;
+}
+
+.header-slogan, .header-img {
+	margin-top: 8%;
+}
+
+.header-slogan button {
+	padding: 2% 12% 0;
+	border: solid lightgrey 2px;
+	border-radius: 4%;
+}
+
+.header-img {
+	background-image: url(../img/header-img.png);
+	background-repeat: no-repeat;
+	background-size: 260px;
+	width: 46%;
+	height: 260px;
+	display: inline-block;
+	margin-left: 1%;
+}
+
+hr {
+	margin: 2%;
+	border-top: solid 2px grey;
+}
+
+.hr1 {
+	margin-top: 10%;
+}
+
+.section1 .features, .about {
+	width: 44%;
+	display: inline-block;
+	margin: 2%;
+}
+
+.banner {
+	background-image: url(../img/mid-page-accent.jpg);
+	background-repeat: no-repeat;
+	background-size: 96%;
+	display: inline-block;
+	width: 100%;
+	height: 140px;
+	margin: 2%;
+}
+
+.section2 .services, .product, .vision {
+	width: 28%;
+	display: inline-block;
+	margin: 2%;
+}
+
+.section3 {
+	width: 28%;
+	display: inline-block;
+	margin: 2%;
+}
+
+footer {
+	text-align: center;
+	margin: 2% 0 20%;
+}
+
+.break {
+	margin-bottom: 10px;
+}
